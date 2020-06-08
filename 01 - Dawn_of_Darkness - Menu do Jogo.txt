@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner (System.in);
+    System.out.println("\nMestre: Está pronto para vivenciar o verdadeiro desespero... hã, digo, aventura?");
+    System.out.println("\n1 - Sim | 2 - Com certeza! |3 - Não sei não hein...");
+    int escolha_menu = entrada.nextInt();
+        if(escolha_menu == 1 || escolha_menu == 2){
+          System.out.println("\nMestre: Conheça o alvorecer da escuridão!");
+          menu();
+        }else if(escolha_menu == 3){
+           System.out.println("\nMestre: Não se engane jovem, não é como se você tivesse muita escolha... Abrace o destino!");
+           menu();
+        }else{
+            System.out.println("\nMestre: Mesmo digitando uma opção inválida, seu destino lhe aguarda! Viva muito, explore, venca seus desafios e encontre a cura...");
+           menu();
+        }}
+    static void menu() { //Classe do menu;
+    Scanner entrada = new Scanner (System.in);
+    System.out.println("\n..:: DAWN OF DARKNESS ::.. \n\n1 - Jogar \n2 - Créditos\n3 - Sair");
+    int escolha_menu = entrada.nextInt();
+    if(escolha_menu == 1){
+              jogo();
+    }
+    else if(escolha_menu == 2){
+              creditos();
+    }
+    else{
+          System.out.println("\nMestre: Não demore para voltar meu aventureiro, uma jornada lhe aguarda...");
+          System.exit(0);
+    }}
+     static void creditos() { //Classe dos créditos;
+     Scanner entrada = new Scanner (System.in);
+        int escolha_menu;
+        System.out.println("\n</> Desenvolvedores </>\n\n-> Ygor Oliveira \n-> Fillipe Vital \n-> Gabryele Barbosa \n-> Rodrigo Shuttleton \n-> Yasmim Candelária");
+        do{
+        System.out.println("\n2 - Voltar");
+        escolha_menu = entrada.nextInt();
+        if(escolha_menu == 2){
+          menu();
+        }else{
+           System.out.println("\nOpção inválida, digite novamente: ");
+        }}while(escolha_menu!=2);
+     }
+
+          static void jogo(){ //Classe do jogo;
+          Scanner entrada = new Scanner (System.in);
+          System.out.println("\nMestre: Hmm... veja só o que temos por aqui, será um corajoso ou um curioso? \n\nBem... vamos lá...");
+          System.out.println("\nPara começarmos, por favor, diga-me o seu nome.");
+          String nome_aventureiro = entrada.next();
+          
+    }
+    }
